@@ -1,0 +1,23 @@
+Ejercicio 1
+Implemente en C++ todas las operaciones primitivas del TAD Queue de números enteros,
+utilizando cada una de las siguientes representaciones. Haga un módulo aparte para cada
+representación y luego haga un programa de prueba. El programa de prueba debería ser idéntico
+para ambas representaciones, ya que consiste únicamente en invocar a sus primitivas, las cuales
+deben tener los mismos encabezados en ambas representaciones.
+a) Una estructura de arreglo con tope (asuma que el Queue es acotado).
+    Resuelto en QueueArr.h y QueueArr.cpp
+b) Una estructura de lista con puntero al principio y puntero al final (LPPF).
+    Resuelto en QueueLPPF.h y QueueLPPF.cpp
+
+
+
+Ejercicio 2
+Implemente en C++ las operaciones primitivas Make, Member, Find e Insert del TAD Diccionario
+utilizando cada una de las siguientes representaciones. Haga un módulo aparte para cada
+representación y luego haga un programa de prueba. El programa de prueba debería ser idéntico
+para ambas representaciones, ya que consiste únicamente en invocar a sus primitivas, las cuales
+deben tener los mismos encabezados en ambas representaciones.
+a) Una estructura de hash (use la función de dispersión h(x) = x % B, siendo B la cant. cubetas).
+b) Una estructura de árbol binario de búsqueda (ABB clásico).
+Nota: El tipo de los elementos a almacenar en el diccionario es Persona y se usará la cédula como
+clave. Utilice la función DarCedula: Persona  int que, dada una persona, devuelve su clave.
