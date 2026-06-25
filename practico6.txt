@@ -23,3 +23,14 @@ b) Una estructura de árbol binario de búsqueda (ABB clásico).
     
 Nota: El tipo de los elementos a almacenar en el diccionario es Persona y se usará la cédula como
 clave. Utilice la función DarCedula: Persona  int que, dada una persona, devuelve su clave.
+
+Ejercicio 3
+Se desea implementar la siguiente operación sobre un Deque de números enteros. Se quiere
+modificar el deque según el siguiente criterio: los elementos en posiciones simétricas respecto de
+los extremos serán sustituidos por la suma de ambos. Por ejemplo, si el deque cuenta
+inicialmente con los valores [2, 4, 8, 6, 7] entonces deberá quedar con los valores [9, 10, 16, 10, 9]
+tras la operación. Implemente la operación solicitada en forma puramente recursiva y usando
+solamente operaciones primitivas del TAD Deque (previamente, implemente dichas primitivas en
+un módulo aparte, utilizando alguna representación adecuada). No se permite utilizar ninguna
+colección auxiliar para resolver este problema. Luego haga un programa de prueba.
+    Implementado en Deque.cpp la función SumarSimetricos
