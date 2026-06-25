@@ -18,6 +18,8 @@ representación y luego haga un programa de prueba. El programa de prueba deber�
 para ambas representaciones, ya que consiste únicamente en invocar a sus primitivas, las cuales
 deben tener los mismos encabezados en ambas representaciones.
 a) Una estructura de hash (use la función de dispersión h(x) = x % B, siendo B la cant. cubetas).
+    Resuelto en Hash.h y Hash.cpp
 b) Una estructura de árbol binario de búsqueda (ABB clásico).
+    
 Nota: El tipo de los elementos a almacenar en el diccionario es Persona y se usará la cédula como
 clave. Utilice la función DarCedula: Persona  int que, dada una persona, devuelve su clave.
