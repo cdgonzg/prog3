@@ -2,17 +2,17 @@
 
 /* Crea un queue vacío. */
 void Make(QueueLPPF &q){
-    q.prim = nullptr;
-    q.ult = nullptr;
+    q.prim = NULL;
+    q.ult = NULL;
 }
 
 /* Agrega un elemento al final del queue. */
 void InsBack(QueueLPPF &q, int item){
     Nodo *nuevo = new Nodo;
     nuevo->info = item;
-    nuevo->sig = nullptr;
+    nuevo->sig = NULL;
 
-    if (q.ult != nullptr) {
+    if (q.ult != NULL) {
         q.ult->sig = nuevo;
     } else {
         q.prim = nuevo;
@@ -22,7 +22,7 @@ void InsBack(QueueLPPF &q, int item){
 
 /* Determina si el queue está vacío o no. */
 bool Empty(const QueueLPPF &q){
-    return q.prim == nullptr;
+    return q.prim == NULL;
 }
 
 /* Devuelve el primer elemento del queue. */
@@ -40,8 +40,8 @@ void RemFront(QueueLPPF &q){
     if (!Empty(q)) {
         Nodo *temp = q.prim;
         q.prim = q.prim->sig;
-        if (q.prim == nullptr) {
-            q.ult = nullptr;
+        if (q.prim == NULL) {
+            q.ult = NULL;
         }
         delete temp;
     }

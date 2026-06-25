@@ -1,6 +1,8 @@
 #ifndef QUEUELPPF_H
 #define QUEUELPPF_H
 
+#include <stdio.h>
+
 typedef struct nodoL { 
     int info;
     nodoL *sig;
