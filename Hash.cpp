@@ -3,7 +3,7 @@
 /* Crea un diccionario vacío. */
 void Make(Hash &h){
     for (int i = 0; i < B; i++) {
-        h[i] = nullptr;
+        h[i] = NULL;
     }
 }
 
@@ -11,7 +11,7 @@ void Make(Hash &h){
 bool Member(Hash h, int k){
     int index = k % B;
     Nodo *current = h[index];
-    while (current != nullptr) {
+    while (current != NULL) {
         if (current->info == k) {
             return true;
         }
@@ -35,7 +35,7 @@ void Insert(Hash &h, int t){
 int Find(Hash h, int k){
     int index = k % B;
     Nodo *current = h[index];
-    while (current != nullptr) {
+    while (current != NULL) {
         if (current->info == k) {
             return current->info;
         }

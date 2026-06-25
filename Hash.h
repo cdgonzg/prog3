@@ -1,6 +1,8 @@
 #ifndef HASH_H
 #define HASH_H
 
+#include <stdio.h>
+
 const int B = 100; /* valor adecuado */
 
 typedef struct nodoL { 
